@@ -137,26 +137,30 @@ div.thinking {
   gap: 200px;
   margin: 0 10% 0 10%;
 }
-/* .gridd div:nth-of-type(1)::before {
-  content: url(../img/title01.svg) attr(x) attr(y);
-  width: 16px;
-  height: 16px;
+.gridd div:nth-of-type(1) h4::before {
+  content: url(../img/title01.svg);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 .gridd div:nth-of-type(2)::before {
   content: url(../img/title02.svg) attr(x) attr(y);
-  width: 16px;
-  height: 16px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 .gridd div:nth-of-type(3)::before {
   content: url(../img/title03.svg) attr(x) attr(y);
-  width: 16px;
-  height: 16px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 .gridd div:nth-of-type(4)::before {
   content: url(../img/title04.svg) attr(x) attr(y);
-  width: 16px;
-  height: 16px;
-} */
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
 
 .ready {
   margin-top: 20%;
@@ -213,13 +217,13 @@ footer {
 footer h3 {
   margin-bottom: 3%;
 }
-input {
+.shadow {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 20px 100px;
-  /* border: none; */
-  /* box-shadow: 2px 2px -2px -2px rgb(0 0 0 / 20%);
-  box-shadow: ; */
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 30px black;
 }
 input::placeholder {
   font-size: 15px;
@@ -229,6 +233,8 @@ input[type="submit"] {
   background-color: #ff3571;
   color: white;
   border: 1px solid black;
+  padding: 20px 100px;
+  border-radius: 10px;
   margin-bottom: 10%;
 }
 footer p:last-of-type {
