@@ -32,10 +32,22 @@ h5 {
   font-weight: 700;
   color: #ddd;
 }
+@keyframes move {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
 
 /* ---------- header */
 header {
   height: 80vh;
+
+  /* transition: all 10s 0s ease-in-out;
+ */
 }
 header img {
   width: 60%;
@@ -43,6 +55,11 @@ header img {
   top: 0;
   right: 0;
 }
+
+header img:nth-of-type(2) {
+  animation: move 3s ease-in-out infinite;
+}
+
 h1 {
   font-size: 54px;
 }
@@ -59,6 +76,7 @@ header div .challengetext::after {
 }
 
 header a {
+  margin-top: 10%;
   text-transform: uppercase;
   text-decoration: none;
   color: #ff3571;
@@ -199,10 +217,14 @@ input {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 20px 100px;
-  border: none;
-  box-shadow: 2px 2px -2px -2px rgb(0 0 0 / 20%);
-  box-shadow: ;
+  /* border: none; */
+  /* box-shadow: 2px 2px -2px -2px rgb(0 0 0 / 20%);
+  box-shadow: ; */
 }
+input::placeholder {
+  font-size: 15px;
+}
+
 input[type="submit"] {
   background-color: #ff3571;
   color: white;
